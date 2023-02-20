@@ -1,0 +1,12 @@
+name: Cypress_Template_Tests
+on: [push]
+jobs:
+  Cypress_Template_Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitCode
+        uses: actions/checkout@v2
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v5
+        with:
+          command: npx cypress run --browser chrome --record --key 3d67125c-b9df-4f8b-b901-1974cbe39e39
