@@ -11,4 +11,4 @@ describe('E2E Appointment Booking', function () {
         console.log("The execution of Testcase is Complete.");
     });
 
-});
+}); 
